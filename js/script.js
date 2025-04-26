@@ -1,7 +1,6 @@
-// Navbar responsive toggle
-const menuBtn = document.getElementById('menu-btn');
+const toggleButton = document.getElementById('menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
 
-menuBtn.addEventListener('click', () => {
+toggleButton.addEventListener('click', () => {
   mobileMenu.classList.toggle('hidden');
 });

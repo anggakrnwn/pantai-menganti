@@ -8,39 +8,74 @@
 </head>
 <body class="font-sans">
 
-  <!-- Navbar -->
-  <header class="bg-white shadow-md fixed top-0 left-0 w-full z-10">
-    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
-      <h1 class="text-2xl font-bold text-blue-600">Pantai Menganti</h1>
-      <nav class="hidden md:flex space-x-6">
-        <a href="#home" class="text-gray-700 hover:text-blue-600">Beranda</a>
-        <a href="#about" class="text-gray-700 hover:text-blue-600">Tentang</a>
-        <a href="#galeri" class="text-gray-700 hover:text-blue-600">Galeri</a>
-        <a href="#kontak" class="text-gray-700 hover:text-blue-600">Kontak</a>
-      </nav>
-      <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+  <nav class="bg-opacity-50 fixed w-full z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="images/projectmenganti.png" alt="Logo" class="h-10 w-10 mr-3">
+          <span class="text-white font-bold text-lg">Menganti Beach</span>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8">
+          <a href="#beranda" class="text-white hover:text-gray-300">Beranda</a>
+          <a href="#tentang" class="text-white hover:text-gray-300">Tentang</a>
+          <a href="#galeri" class="text-white hover:text-gray-300">Galeri</a>
+          <a href="#aktivitas" class="text-white hover:text-gray-300">Aktivitas</a>
+          <a href="#lokasi" class="text-white hover:text-gray-300">Lokasi</a>
+          <a href="#kontak" class="text-white hover:text-gray-300">Kontak</a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-toggle" class="text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
-      <a href="#home" class="block py-2 text-gray-700">Beranda</a>
-      <a href="#about" class="block py-2 text-gray-700">Tentang</a>
-      <a href="#galeri" class="block py-2 text-gray-700">Galeri</a>
-      <a href="#kontak" class="block py-2 text-gray-700">Kontak</a>
+    <div id="mobile-menu" class="hidden md:hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#" class="block text-white hover:bg-gray-700 hover:bg-opacity-50 px-3 py-2 rounded-md">Beranda</a>
+        <a href="#" class="block text-white hover:bg-gray-700 hover:bg-opacity-50 px-3 py-2 rounded-md">Tentang</a>
+        <a href="#" class="block text-white hover:bg-gray-700 hover:bg-opacity-50 px-3 py-2 rounded-md">Galeri</a>
+        <a href="#" class="block text-white hover:bg-gray-700 hover:bg-opacity-50 px-3 py-2 rounded-md">Aktivitas</a>
+        <a href="#" class="block text-white hover:bg-gray-700 hover:bg-opacity-50 px-3 py-2 rounded-md">Lokasi</a>
+        <a href="#" class="block text-white hover:bg-gray-700 hover:bg-opacity-50 px-3 py-2 rounded-md">Kontak</a>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('images/hero.png');">
-    <div class="bg-white bg-opacity-70 p-6 rounded-lg text-center">
-      <h2 class="text-4xl font-bold text-blue-600 mb-4">Selamat Datang di Pantai Menganti</h2>
-      <p class="text-gray-700 mb-4">Keindahan pantai yang menakjubkan menanti Anda!</p>
-      <a href="#galeri" class="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700">Lihat Galeri</a>
-    </div>
-  </section>
+
+ <!-- Hero Section -->
+<section id="beranda" class="h-screen bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('images/hero.png');">
+  <div class="px-4">
+    <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4 drop-shadow-lg">
+      Menganti Beach
+    </h1>
+    <h2 class="text-2xl md:text-3xl text-gray-300 mb-6 drop-shadow-md">
+      Surga Tersembunyi di Kebumen, Jawa Tengah
+    </h2>
+    <p class="text-white text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md">
+      Nikmati keindahan pantai berpasir putih dengan tebing karang yang mempesona
+    </p>
+    <a href="#galeri" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+      <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      Jelajahi
+    </a>
+  </div>
+</section>
 
   <!-- Section About -->
-  <section id="about" class="py-20 px-4 bg-gray-100">
+  <section id="tentang" class="py-20 px-4 bg-gray-100">
     <div class="container mx-auto text-center">
       <h2 class="text-3xl font-bold text-blue-600 mb-6">Tentang Pantai Menganti</h2>
       <p class="text-gray-700 leading-relaxed">
