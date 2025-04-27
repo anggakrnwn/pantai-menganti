@@ -27,4 +27,5 @@ Proyek ini dibuat untuk:
 
 1. Clone repositori ini atau download semua file ke lokal.
 2. Buka file `index.html` menggunakan browser favorit Anda.
-3. Tidak memerlukan instalasi tambahan (tidak perlu server lokal atau framework tambahan).
+3. Lalu buka Terminal dan ketikkan " npm run dev ", untuk menjalankan tailwindcss.
+4. Tidak memerlukan instalasi tambahan (tidak perlu server lokal atau framework tambahan).
