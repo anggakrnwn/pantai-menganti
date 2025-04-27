@@ -1,7 +1,7 @@
 {
   "name": "project-menganti",
   "version": "1.0.0",
-  "description": "",
+  "description": "Ini adalah proyek website sederhana untuk Pantai Menganti. Website ini dibuat menggunakan **HTML**, **TailwindCSS**, dan **JavaScript Vanilla** sebagai bagian dari tugas mata kuliah **Pemrograman Web**.",
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
@@ -15,5 +15,13 @@
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anggakrnwn/pantai-menganti.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anggakrnwn/pantai-menganti/issues"
+  },
+  "homepage": "https://github.com/anggakrnwn/pantai-menganti#readme"
 }

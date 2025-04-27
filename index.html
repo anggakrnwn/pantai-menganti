@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pantai Menganti</title>
   <link rel="stylesheet" href="src/output.css"> <!-- optional kalau kamu nanti mau custom -->
+  
 </head>
 <body class="font-sans">
 
@@ -130,19 +131,118 @@
 <!-- Galeri -->
 <section id="galeri" class="py-20 px-4">
   <div class="container mx-auto text-center">
-    <img src="images/camera.png" class="block mx-auto h-15 w-15" alt="" srcset="">
+    <img src="images/camera.png" class="block mx-auto h-15 w-15" alt="">
     <h2 class="text-3xl font-bold text-blue-600 mb-6">Galeri Keindahan</h2>
     <h2 class="mb-8 text-3xl">Jelajahi keindahan Pantai Menganti melalui foto-foto menakjubkan</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <img src="images/galeri1.jpg" alt="Pantai 1" class="h-60 w-full object-cover rounded-lg shadow-md">
-      <img src="images/galeri2.jpg" alt="Pantai 2" class="h-60 w-full object-cover rounded-lg shadow-md">
-      <img src="images/galeri3.jpg" alt="Pantai 3" class="h-60 w-full object-cover rounded-lg shadow-md">
-      <img src="images/galeri3.jpg" alt="Pantai 3" class="h-60 w-full object-cover rounded-lg shadow-md">
-      <img src="images/galeri3.jpg" alt="Pantai 3" class="h-60 w-full object-cover rounded-lg shadow-md">
-      <img src="images/galeri3.jpg" alt="Pantai 3" class="h-60 w-full object-cover rounded-lg shadow-md">
+      
+      <!-- Item 1 -->
+      <div class="group">
+        <!-- container overflow-hidden supaya zoomnya tidak meluber -->
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img
+            src="images/gambar1.png"
+            alt="Pantai 1"
+            class="h-60 w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
+          >
+        </div>
+        <!-- teks muncul di bawah gambar -->
+        <div
+          class="mt-2 text-lg font-semibold text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          Pemandangan Dari Bukit
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="group">
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img
+            src="images/gambar2.jpg"
+            alt="Pantai 2"
+            class="h-60 w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
+          >
+        </div>
+        <div
+          class="mt-2 text-lg font-semibold text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          Keindahan Pasir Putih
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="group">
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img
+            src="images/gambar3.jpg"
+            alt="Pantai 3"
+            class="h-60 w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
+          >
+        </div>
+        <div
+          class="mt-2 text-lg font-semibold text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          Jembatan Merah Saat Senja
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="group">
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img
+            src="images/gambar4.jpg"
+            alt="Pantai 3"
+            class="h-60 w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
+          >
+        </div>
+        <div
+          class="mt-2 text-lg font-semibold text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          Bebatuan Yang Memecah Ombak
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="group">
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img
+            src="images/gambar5.jpg"
+            alt="Pantai 3"
+            class="h-60 w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
+          >
+        </div>
+        <div
+          class="mt-2 text-lg font-semibold text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          Pemandangan Matahari Terbenam 
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="group">
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img
+            src="images/gambar6.jpg"
+            alt="Pantai 3"
+            class="h-60 w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
+          >
+        </div>
+        <div
+          class="mt-2 text-lg font-semibold text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          Camping Ground
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
+
+
+
+
+
+
 
 
 <!-- Aktivitas Menarik -->
