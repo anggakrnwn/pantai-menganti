@@ -9,49 +9,51 @@
 </head>
 <body class="font-sans">
 
-  <nav class="bg-opacity-50 fixed w-full z-10">
+  <nav class="bg-transparent fixed w-full z-10 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between h-16 items-center">
-        <!-- Logo -->
-        <div class="flex items-center">
-          <img src="images/projectmenganti.png" alt="Logo" class="h-10 w-10 mr-3">
-          <span class="text-white font-bold text-lg">Menganti Beach</span>
-        </div>
+        <div class="flex justify-between h-16 items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="images/projectmenganti.png" alt="Logo" class="h-10 w-10 mr-3">
+                <span class="text-white font-bold text-lg">Menganti Beach</span>
+            </div>
 
-        <!-- Desktop Menu -->
-        <div class="hidden md:flex space-x-8">
-          <a href="#beranda" class="text-white hover:text-gray-300">Beranda</a>
-          <a href="#tentang" class="text-white hover:text-gray-300">Tentang</a>
-          <a href="#galeri" class="text-white hover:text-gray-300">Galeri</a>
-          <a href="#aktivitas" class="text-white hover:text-gray-300">Aktivitas</a>
-          <a href="#lokasi" class="text-white hover:text-gray-300">Lokasi</a>
-          <a href="#kontak" class="text-white hover:text-gray-300">Kontak</a>
-        </div>
+            <!-- Desktop Menu -->
+            <div class="desktop-menu hidden md:flex space-x-8">
+                <a href="#beranda" class="text-white hover:text-blue-400 transition-colors duration-300">Beranda</a>
+                <a href="#tentang" class="text-white hover:text-blue-400 transition-colors duration-300">Tentang</a>
+                <a href="#galeri" class="text-white hover:text-blue-400 transition-colors duration-300">Galeri</a>
+                <a href="#aktivitas" class="text-white hover:text-blue-400 transition-colors duration-300">Aktivitas</a>
+                <a href="#lokasi" class="text-white hover:text-blue-400 transition-colors duration-300">Lokasi</a>
+                <a href="#kontak" class="text-white hover:text-blue-400 transition-colors duration-300">Kontak</a>
+            </div>
 
-        <!-- Mobile menu button -->
-        <div class="md:hidden flex items-center">
-          <button id="menu-toggle" class="text-white focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
         </div>
-      </div>
     </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden">
-      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-        <a href="#" class="block text-white hover:bg-gray-700 hover:bg-opacity-50 px-3 py-2 rounded-md">Beranda</a>
-        <a href="#" class="block text-white hover:bg-gray-700 hover:bg-opacity-50 px-3 py-2 rounded-md">Tentang</a>
-        <a href="#" class="block text-white hover:bg-gray-700 hover:bg-opacity-50 px-3 py-2 rounded-md">Galeri</a>
-        <a href="#" class="block text-white hover:bg-gray-700 hover:bg-opacity-50 px-3 py-2 rounded-md">Aktivitas</a>
-        <a href="#" class="block text-white hover:bg-gray-700 hover:bg-opacity-50 px-3 py-2 rounded-md">Lokasi</a>
-        <a href="#" class="block text-white hover:bg-gray-700 hover:bg-opacity-50 px-3 py-2 rounded-md">Kontak</a>
-      </div>
-    </div>
-  </nav>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white">
+  <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+      <a href="#beranda" class="mobile-link block text-blue-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition-colors duration-300">Beranda</a>
+      <a href="#tentang" class="mobile-link block text-blue-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition-colors duration-300">Tentang</a>
+      <a href="#galeri" class="mobile-link block text-blue-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition-colors duration-300">Galeri</a>
+      <a href="#aktivitas" class="mobile-link block text-blue-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition-colors duration-300">Aktivitas</a>
+      <a href="#lokasi" class="mobile-link block text-blue-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition-colors duration-300">Lokasi</a>
+      <a href="#kontak" class="mobile-link block text-blue-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition-colors duration-300">Kontak</a>
+  </div>
+</div>
+</nav>
+  
+  
+  
 
   <section id="beranda" class="h-screen bg-cover bg-center flex items-center justify-center text-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/hero.png');">
     <div class="px-4">
