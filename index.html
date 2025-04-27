@@ -1,470 +1,674 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pantai Menganti</title>
-  <link rel="icon" href="images/projectmenganti.png" type="image/png">
-  <link rel="stylesheet" href="src/output.css"> <!-- optional kalau kamu nanti mau custom -->
-  
-</head>
-<body class="font-sans">
-
-  <nav class="bg-transparent fixed w-full z-10 transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pantai Menganti</title>
+    <link rel="icon" href="images/projectmenganti.png" type="image/png" />
+    <link rel="stylesheet" href="src/output.css" />
+    <!-- optional kalau kamu nanti mau custom -->
+  </head>
+  <body class="font-sans">
+    <nav class="bg-transparent fixed w-full z-10 transition-all duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16 items-center">
-            <!-- Logo -->
-            <div class="flex items-center">
-                <img src="images/projectmenganti.png" alt="Logo" class="h-10 w-10 mr-3">
-                <span class="text-white font-bold text-lg">Menganti Beach</span>
-            </div>
+          <!-- Logo -->
+          <div class="flex items-center">
+            <img
+              src="images/projectmenganti.png"
+              alt="Logo"
+              class="h-10 w-10 mr-3"
+            />
+            <span class="text-white font-bold text-lg">Menganti Beach</span>
+          </div>
 
-            <!-- Desktop Menu -->
-            <div class="desktop-menu hidden md:flex space-x-8">
-                <a href="#beranda" class="text-white hover:text-blue-400 transition-colors duration-300">Beranda</a>
-                <a href="#tentang" class="text-white hover:text-blue-400 transition-colors duration-300">Tentang</a>
-                <a href="#galeri" class="text-white hover:text-blue-400 transition-colors duration-300">Galeri</a>
-                <a href="#aktivitas" class="text-white hover:text-blue-400 transition-colors duration-300">Aktivitas</a>
-                <a href="#lokasi" class="text-white hover:text-blue-400 transition-colors duration-300">Lokasi</a>
-                <a href="#kontak" class="text-white hover:text-blue-400 transition-colors duration-300">Kontak</a>
-            </div>
+          <!-- Desktop Menu -->
+          <div class="desktop-menu hidden md:flex space-x-8">
+            <a
+              href="#beranda"
+              class="text-white hover:text-blue-400 transition-colors duration-300"
+              >Beranda</a
+            >
+            <a
+              href="#tentang"
+              class="text-white hover:text-blue-400 transition-colors duration-300"
+              >Tentang</a
+            >
+            <a
+              href="#galeri"
+              class="text-white hover:text-blue-400 transition-colors duration-300"
+              >Galeri</a
+            >
+            <a
+              href="#aktivitas"
+              class="text-white hover:text-blue-400 transition-colors duration-300"
+              >Aktivitas</a
+            >
+            <a
+              href="#lokasi"
+              class="text-white hover:text-blue-400 transition-colors duration-300"
+              >Lokasi</a
+            >
+            <a
+              href="#kontak"
+              class="text-white hover:text-blue-400 transition-colors duration-300"
+              >Kontak</a
+            >
+          </div>
 
-            <!-- Mobile menu button -->
-            <div class="md:hidden flex items-center">
-                <button id="menu-toggle" class="text-white focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center">
+            <button id="menu-toggle" class="text-white focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-    </div>
-
-<!-- Mobile Menu -->
-<div id="mobile-menu" class="hidden md:hidden bg-white">
-  <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-      <a href="#beranda" class="mobile-link block text-blue-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition-colors duration-300">Beranda</a>
-      <a href="#tentang" class="mobile-link block text-blue-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition-colors duration-300">Tentang</a>
-      <a href="#galeri" class="mobile-link block text-blue-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition-colors duration-300">Galeri</a>
-      <a href="#aktivitas" class="mobile-link block text-blue-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition-colors duration-300">Aktivitas</a>
-      <a href="#lokasi" class="mobile-link block text-blue-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition-colors duration-300">Lokasi</a>
-      <a href="#kontak" class="mobile-link block text-blue-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition-colors duration-300">Kontak</a>
-  </div>
-</div>
-</nav>
-  
-  
-  
-
-  <section id="beranda" class="relative h-screen bg-cover bg-center flex items-center justify-center text-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/hero.png');">
-    <div class="px-4">
-      <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4 drop-shadow-lg">
-        Menganti Beach
-      </h1>
-      <h2 class="text-2xl md:text-3xl text-gray-300 mb-6 drop-shadow-md">
-        Surga Tersembunyi di Kebumen, Jawa Tengah
-      </h2>
-      <p class="text-white text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md">
-        Nikmati keindahan pantai berpasir putih dengan tebing karang yang mempesona
-      </p>
-      <a href="#galeri" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
-        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-        Jelajahi
-      </a>
-    </div>
-  </section>
-  
-<!-- Wave SVG -->
-<div class="absolute bottom-0 w-full overflow-hidden leading-none">
-  <svg viewBox="0 0 1440 150" preserveAspectRatio="none" class="w-full h-[100px] transform rotate-180">
-    <path fill="#ffffff" d="M0,64L48,69.3C96,75,192,85,288,101.3C384,117,480,139,576,138.7C672,139,768,117,864,96C960,75,1056,53,1152,64C1248,75,1344,117,1392,138.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
-  </svg>
-</div>
-
-</section>
-  <!-- Section About -->
-  <section id="tentang" class="py-20 px-4 bg-white">
-    <img src="images/ancor.svg" alt="" class="h-20 block mx-auto">  
-    <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-bold text-blue-600 mb-6">Tentang Pantai Menganti</h2>
-      <p class="text-gray-700 leading-relaxed text-2xl">
-        Keindahan tersembunyi di pesisir selatan Pulau Jawa.
-      </p>
-    </div>
-  </section>
-
-  <!-- Section untuk pantai menganti -->
-  <section class="py-12 bg-white">
-    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-12">
-      <!-- Gambar -->
-      <div class="md:w-1/2 mb-8 md:mb-0">
-        <img src="images/galeri2.jpg" alt="Pantai Menganti" class="rounded-lg shadow-lg mx-auto">
       </div>
-  
-      <!-- Teks -->
-      <div class="md:w-1/2 text-center md:text-left">
-        <h2 class="text-3xl font-bold mb-4">Pantai Menganti</h2>
-        <p class="text-gray-700 mb-4">
-          Pantai Menganti adalah salah satu pantai tersembunyi di pesisir selatan Jawa Tengah, tepatnya di Kecamatan Ayah, Kabupaten Kebumen.
-          Nama "Menganti" berasal dari kata "ganti" yang memiliki arti pergantian, karena dahulu pantai ini merupakan tempat pergantian perahu nelayan.
-        </p>
-        <p class="text-gray-700 mb-6">
-          Dengan pasir putih yang lembut, air laut biru kehijauan, dan tebing karang yang menjulang, Pantai Menganti menawarkan pemandangan alam yang memukau.
-          Keindahannya sering dijuluki sebagai "Bali-nya Jawa Tengah".
-        </p>
-  
-        <!-- Tags -->
-        <div class="flex flex-wrap gap-3 mb-6 justify-center md:justify-start">
-          <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-semibold">Pasir Putih</span>
-          <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-semibold">Tebing Karang</span>
-          <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-semibold">Bukit Hijau</span>
-          <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-semibold">Air Biru Kehijauan</span>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="#beranda"
+            class="mobile-link block text-blue-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition-colors duration-300"
+            >Beranda</a
+          >
+          <a
+            href="#tentang"
+            class="mobile-link block text-blue-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition-colors duration-300"
+            >Tentang</a
+          >
+          <a
+            href="#galeri"
+            class="mobile-link block text-blue-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition-colors duration-300"
+            >Galeri</a
+          >
+          <a
+            href="#aktivitas"
+            class="mobile-link block text-blue-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition-colors duration-300"
+            >Aktivitas</a
+          >
+          <a
+            href="#lokasi"
+            class="mobile-link block text-blue-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition-colors duration-300"
+            >Lokasi</a
+          >
+          <a
+            href="#kontak"
+            class="mobile-link block text-blue-600 hover:bg-blue-600 hover:text-white px-3 py-2 rounded-md transition-colors duration-300"
+            >Kontak</a
+          >
         </div>
-  
-        <!-- Tombol -->
-        <a href="#jelajahi" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition">
-          Jelajahi Lebih Lanjut
+      </div>
+    </nav>
+
+    <section
+      id="beranda"
+      class="relative h-screen bg-cover bg-center flex items-center justify-center text-center"
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url('images/hero.png');
+      "
+    >
+      <div class="px-4">
+        <h1
+          class="text-5xl md:text-7xl font-extrabold text-white mb-4 drop-shadow-lg"
+        >
+          Menganti Beach
+        </h1>
+        <h2 class="text-2xl md:text-3xl text-gray-300 mb-6 drop-shadow-md">
+          Surga Tersembunyi di Kebumen, Jawa Tengah
+        </h2>
+        <p
+          class="text-white text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md"
+        >
+          Nikmati keindahan pantai berpasir putih dengan tebing karang yang
+          mempesona
+        </p>
+        <a
+          href="#galeri"
+          class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+        >
+          <svg
+            class="w-6 h-6 mr-2"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+          Jelajahi
         </a>
       </div>
-    </div>
-  </section>
 
-<!-- Galeri -->
-<section id="galeri" class="py-20 px-4">
-  <div class="container mx-auto text-center">
-    <img src="images/camera.png" class="block mx-auto h-15 w-15" alt="">
-    <h2 class="text-3xl font-bold text-blue-600 mb-6">Galeri Keindahan</h2>
-    <h2 class="mb-8 text-3xl">Jelajahi keindahan Pantai Menganti melalui foto-foto menakjubkan</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      
-      <!-- Item 1 -->
-      <div class="group">
-        <!-- container overflow-hidden supaya zoomnya tidak meluber -->
-        <div class="overflow-hidden rounded-lg shadow-md">
-          <img
-            src="images/gambar1.png"
-            alt="Pantai 1"
-            class="h-60 w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
-          >
-        </div>
-        <!-- teks muncul di bawah gambar -->
-        <div
-          class="mt-2 text-lg font-semibold text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+      <!-- Wave SVG -->
+      <div
+        class="absolute bottom-0 w-full overflow-hidden leading-none"
+        style="z-index: 1"
+      >
+        <svg
+          viewBox="0 0 1440 150"
+          preserveAspectRatio="none"
+          class="w-full h-[100px] transform rotate-180"
         >
-          Pemandangan Dari Bukit
-        </div>
+          <path
+            fill="#ffffff"
+            d="M0,64L48,69.3C96,75,192,85,288,101.3C384,117,480,139,576,138.7C672,139,768,117,864,96C960,75,1056,53,1152,64C1248,75,1344,117,1392,138.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          ></path>
+        </svg>
       </div>
+    </section>
 
-      <!-- Item 2 -->
-      <div class="group">
-        <div class="overflow-hidden rounded-lg shadow-md">
-          <img
-            src="images/gambar2.jpg"
-            alt="Pantai 2"
-            class="h-60 w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
-          >
-        </div>
-        <div
-          class="mt-2 text-lg font-semibold text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        >
-          Keindahan Pasir Putih
-        </div>
-      </div>
-
-      <!-- Item 3 -->
-      <div class="group">
-        <div class="overflow-hidden rounded-lg shadow-md">
-          <img
-            src="images/gambar3.jpg"
-            alt="Pantai 3"
-            class="h-60 w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
-          >
-        </div>
-        <div
-          class="mt-2 text-lg font-semibold text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        >
-          Jembatan Merah Saat Senja
-        </div>
-      </div>
-
-      <!-- Item 4 -->
-      <div class="group">
-        <div class="overflow-hidden rounded-lg shadow-md">
-          <img
-            src="images/gambar4.jpg"
-            alt="Pantai 3"
-            class="h-60 w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
-          >
-        </div>
-        <div
-          class="mt-2 text-lg font-semibold text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        >
-          Bebatuan Yang Memecah Ombak
-        </div>
-      </div>
-
-      <!-- Item 5 -->
-      <div class="group">
-        <div class="overflow-hidden rounded-lg shadow-md">
-          <img
-            src="images/gambar5.jpg"
-            alt="Pantai 3"
-            class="h-60 w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
-          >
-        </div>
-        <div
-          class="mt-2 text-lg font-semibold text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        >
-          Pemandangan Matahari Terbenam 
-        </div>
-      </div>
-
-      <!-- Item 6 -->
-      <div class="group">
-        <div class="overflow-hidden rounded-lg shadow-md">
-          <img
-            src="images/gambar6.jpg"
-            alt="Pantai 3"
-            class="h-60 w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
-          >
-        </div>
-        <div
-          class="mt-2 text-lg font-semibold text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        >
-          Camping Ground
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-<!-- Aktivitas Menarik -->
-<section id="aktivitas" class="py-20 px-4">
-  <div class="container mx-auto text-center">
-    <h2 class="text-3xl font-bold text-blue-600 mb-2">Aktivitas Menarik</h2>
-    <p class="text-gray-600 mb-10">Berbagai kegiatan seru yang bisa dilakukan di Pantai Menganti.</p>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-      <!-- Card 1 -->
-      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg hover:-translate-y-2 transform transition duration-300">
-        <div class="text-blue-600 text-4xl mb-4">
-          <i class="fas fa-umbrella-beach"></i>
-        </div>
-        <h3 class="font-bold text-lg mb-2">Bersantai di Pantai</h3>
-        <p class="text-gray-600">Nikmati keindahan pasir putih dan suara deburan ombak sambil berjemur atau sekadar duduk menikmati pemandangan.</p>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg hover:-translate-y-2 transform transition duration-300">
-        <div class="text-blue-600 text-4xl mb-4">
-          <i class="fas fa-swimmer"></i>
-        </div>
-        <h3 class="font-bold text-lg mb-2">Aktivitas Air</h3>
-        <p class="text-gray-600">Pantai Menganti cocok untuk berenang, bermain air, atau berselancar. Namun tetap perhatikan kondisi ombak untuk keamanan.</p>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg hover:-translate-y-2 transform transition duration-300">
-        <div class="text-blue-600 text-4xl mb-4">
-          <i class="fas fa-hiking"></i>
-        </div>
-        <h3 class="font-bold text-lg mb-2">Hiking & Fotografi</h3>
-        <p class="text-gray-600">Jelajahi bukit dan tebing sekitar pantai untuk mendapatkan pemandangan menakjubkan dan spot foto terbaik.</p>
-      </div>
-    </div>
-
-    <!-- Tips Berwisata -->
-    <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-      <div class="bg-blue-600 text-white p-8 rounded-lg shadow-md">
-        <h3 class="text-2xl font-bold mb-4">Tips Berwisata</h3>
-        <ul class="list-disc list-inside space-y-2">
-          <li>Bawa perlengkapan seperti topi, kacamata hitam, dan tabir surya.</li>
-          <li>Perhatikan kondisi ombak dan air sebelum berenang.</li>
-          <li>Jaga kebersihan pantai, bawa pulang sampah Anda.</li>
-          <li>Hindari datang saat hujan lebat untuk menghindari bahaya.</li>
-        </ul>
-      </div>
-      <div>
-        <img src="images/galeri2.jpg" alt="Pantai Menganti" class="rounded-lg shadow-md object-cover w-full h-80">
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- Lokasi -->
-<section id="lokasi" class="bg-gray-100 p-6">
-  <div class="text-center mb-10">
-    <img src="images/location.svg" class="mx-auto mb-4" style="width: 48px; height: 48px; max-width: 100%;">
-    <h1 class="text-3xl font-bold text-blue-600 mb-3">Lokasi & Akses</h1>
-    <h2>Temukan cara menuju Pantai Menganti dan waktu terbaik untuk berkunjung</h2>
-  </div>
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-    <!-- Kolom Kiri (Alamat, Jam Operasional, Waktu Terbaik) -->
-    <div class="space-y-6">
-      <!-- Alamat -->
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h2 class="text-xl font-bold mb-2">📍 Alamat</h2>
-        <p>Desa Karangduwur, Kecamatan Ayah, Kabupaten Kebumen, Jawa Tengah</p>
-        <ul class="list-disc list-inside text-sm mt-4">
-          <li>± 15 km dari Pantai Logending</li>
-          <li>± 30 km dari pusat Kota Gombong</li>
-          <li>± 65 km dari pusat Kota Kebumen</li>
-        </ul>
-      </div>
-
-      <!-- Jam Operasional -->
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h2 class="text-xl font-bold mb-2">⏰ Jam Operasional</h2>
-        <p>Pantai Menganti buka setiap hari selama 24 jam, namun untuk keamanan direkomendasikan berkunjung antara:</p>
-        <p class="mt-2 font-semibold">06.00 - 18.00 WIB</p>
-      </div>
-
-      <!-- Waktu Terbaik untuk Berkunjung -->
-       <div class="mt-6 bg-gray-100">
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h2 class="text-xl font-bold mb-4">✨ Waktu Terbaik untuk Berkunjung</h2>
-        <div class="space-y-3 text-sm">
-          <div>
-            <p class="font-semibold text-green-700">Musim Kemarau (Mei-September)</p>
-            <p>Waktu terbaik untuk berkunjung dengan cuaca cerah dan laut tenang. <span class="bg-green-200 px-2 py-0.5 rounded">Sangat Direkomendasikan</span></p>
-          </div>
-          <div>
-            <p class="font-semibold text-yellow-700">Musim Peralihan (April & Oktober)</p>
-            <p>Cuaca bisa berubah-ubah, namun masih cukup baik untuk berkunjung.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-red-700">Musim Hujan (November-Maret)</p>
-            <p>Hindari berkunjung saat hujan lebat karena risiko gelombang dan tanah longsor.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-
-    <!-- Kolom Kanan (Peta Lokasi) -->
-    <div class="space-y-6">
-      <div class="bg-white p-6 rounded-lg shadow">
-        <h2 class="text-xl font-bold mb-4">🧭 Lokasi Peta</h2>
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.6269949299647!2d109.39829317492936!3d-7.503478092505311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6520a31df5c971%3A0x8cfbe5e36f8e4f38!2sPantai%20Menganti!5e0!3m2!1sid!2sid!4v1714205840590!5m2!1sid!2sid" 
-          width="100%" 
-          height="250" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade"
-          class="rounded mb-4">
-        </iframe>
-        <div class="text-sm">
-          <p>Pantai Menganti dapat diakses dengan kendaraan pribadi melalui jalan darat. Dari pusat Kota Kebumen, ikuti rute menuju ke arah selatan melalui Kecamatan Ayah.</p>
-          <div class="mt-4 p-3 bg-yellow-100 text-yellow-800 rounded">
-            <p><strong>Tips:</strong> Jalan menuju pantai cukup menantang dengan beberapa tanjakan dan turunan. Disarankan menggunakan kendaraan dengan ground clearance tinggi.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- END Lokasi -->
-  <!-- Kontak -->
-  <section id="kontak" class="py-12 px-4 bg-white">
-    <div class="container mx-auto max-w-4xl">
-      <div class="text-center mb-10">
-        <img src="images/contact.svg" alt="Kontak Kami"
-        class="mx-auto mb-4" style="width: 48px; height: 48px; max-width: 100%;">
-        
-        <h1 class="text-3xl font-bold text-blue-600 mb-3">Kontak Kami</h1>
-        <p class="text-gray-600">
-          Hubungi kami untuk informasi lebih lanjut atau reservasi kunjungan kelompok
+    <!-- Section About -->
+    <section id="tentang" class="py-20 px-4 bg-white">
+      <img src="images/ancor.svg" alt="" class="h-20 block mx-auto" />
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold text-blue-600 mb-6">
+          Tentang Pantai Menganti
+        </h2>
+        <p class="text-gray-700 leading-relaxed text-2xl">
+          Keindahan tersembunyi di pesisir selatan Pulau Jawa.
         </p>
       </div>
-  
-      <div class="flex flex-col md:flex-row gap-6">
-        <!-- Informasi Kontak -->
-        <div class="md:w-1/2 bg-gray-50 p-6 rounded-lg">
-          <h2 class="text-xl font-bold text-blue-600 mb-5 border-b pb-2">Informasi Kontak</h2>
-          
-          <div class="space-y-4">
-            <div>
-              <h3 class="font-semibold text-gray-700">Alamat</h3>
-              <p class="text-gray-600 mt-1">
-                Desa Karangduwur, Kecamatan Ayah,<br>
-                Kabupaten Kebumen, Jawa Tengah
-              </p>
-            </div>
-            
-            <div>
-              <h3 class="font-semibold text-gray-700">Telepon</h3>
-              <p class="text-gray-600 mt-1">+62 812-3456-7890</p>
-            </div>
-            
-            <div>
-              <h3 class="font-semibold text-gray-700">Email</h3>
-              <p class="text-gray-600 mt-1">info@pantaimenganti.com</p>
-            </div>
-            
-            <!-- media belum ada -->
-          </div>
+    </section>
+
+    <!-- Section untuk pantai menganti -->
+    <section class="py-12 bg-white">
+      <div
+        class="container mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-12"
+      >
+        <!-- Gambar -->
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <img
+            src="images/galeri2.jpg"
+            alt="Pantai Menganti"
+            class="rounded-lg shadow-lg mx-auto"
+          />
         </div>
-  
-        <!-- Form Kirim Pesan dengan Shadow Box -->
-        <div class="md:w-1/2 bg-white p-6 rounded-lg border border-gray-200 shadow-lg">
-          <h2 class="text-xl font-bold text-blue-600 mb-5 border-b pb-2">Kirim Pesan</h2>
-          
-          <form class="space-y-4">
-            <div>
-              <label class="block text-gray-700 mb-1">Nama</label>
-              <input type="text" placeholder="Nama Anda"
-                     class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
-            </div>
-            
-            <div>
-              <label class="block text-gray-700 mb-1">Email</label>
-              <input type="email" placeholder="email@contoh.com"
-                     class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
-            </div>
-            
-            <div>
-              <label class="block text-gray-700 mb-1">Subjek</label>
-              <input type="text" placeholder="Subjek pesan"
-                     class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
-            </div>
-            
-            <div>
-              <label class="block text-gray-700 mb-1">Pesan</label>
-              <textarea placeholder="Tulis pesan Anda di sini"
-                        class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500 h-32"></textarea>
-            </div>
-            
-            <button type="submit" 
-                    class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded font-medium transition">
-              Kirim Pesan
-            </button>
-          </form>
+
+        <!-- Teks -->
+        <div class="md:w-1/2 text-center md:text-left">
+          <h2 class="text-3xl font-bold mb-4">Pantai Menganti</h2>
+          <p class="text-gray-700 mb-4">
+            Pantai Menganti adalah salah satu pantai tersembunyi di pesisir
+            selatan Jawa Tengah, tepatnya di Kecamatan Ayah, Kabupaten Kebumen.
+            Nama "Menganti" berasal dari kata "ganti" yang memiliki arti
+            pergantian, karena dahulu pantai ini merupakan tempat pergantian
+            perahu nelayan.
+          </p>
+          <p class="text-gray-700 mb-6">
+            Dengan pasir putih yang lembut, air laut biru kehijauan, dan tebing
+            karang yang menjulang, Pantai Menganti menawarkan pemandangan alam
+            yang memukau. Keindahannya sering dijuluki sebagai "Bali-nya Jawa
+            Tengah".
+          </p>
+
+          <!-- Tags -->
+          <div
+            class="flex flex-wrap gap-3 mb-6 justify-center md:justify-start"
+          >
+            <span
+              class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-semibold"
+              >Pasir Putih</span
+            >
+            <span
+              class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-semibold"
+              >Tebing Karang</span
+            >
+            <span
+              class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-semibold"
+              >Bukit Hijau</span
+            >
+            <span
+              class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full font-semibold"
+              >Air Biru Kehijauan</span
+            >
+          </div>
+
+          <!-- Tombol -->
+          <a
+            href="#jelajahi"
+            class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition"
+          >
+            Jelajahi Lebih Lanjut
+          </a>
         </div>
       </div>
-    </div>
-  </section>
-  
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-white py-6 text-center shadow-inner">
-    <p class="text-gray-600">&copy; 2025 Pantai Menganti. Semua Hak Dilindungi.</p>
-  </footer>
+    <!-- Galeri -->
+    <section id="galeri" class="py-20 px-4">
+      <div class="container mx-auto text-center">
+        <img src="images/camera.png" class="block mx-auto h-15 w-15" alt="" />
+        <h2 class="text-3xl font-bold text-blue-600 mb-6">Galeri Keindahan</h2>
+        <h2 class="mb-8 text-3xl">
+          Jelajahi keindahan Pantai Menganti melalui foto-foto menakjubkan
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Item 1 -->
+          <div class="group">
+            <!-- container overflow-hidden supaya zoomnya tidak meluber -->
+            <div class="overflow-hidden rounded-lg shadow-md">
+              <img
+                src="images/gambar1.png"
+                alt="Pantai 1"
+                class="h-60 w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
+              />
+            </div>
+            <!-- teks muncul di bawah gambar -->
+            <div
+              class="mt-2 text-lg font-semibold text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              Pemandangan Dari Bukit
+            </div>
+          </div>
 
-  <script src="js/script.js"></script>
-</body>
+          <!-- Item 2 -->
+          <div class="group">
+            <div class="overflow-hidden rounded-lg shadow-md">
+              <img
+                src="images/gambar2.jpg"
+                alt="Pantai 2"
+                class="h-60 w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
+              />
+            </div>
+            <div
+              class="mt-2 text-lg font-semibold text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              Keindahan Pasir Putih
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="group">
+            <div class="overflow-hidden rounded-lg shadow-md">
+              <img
+                src="images/gambar3.jpg"
+                alt="Pantai 3"
+                class="h-60 w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
+              />
+            </div>
+            <div
+              class="mt-2 text-lg font-semibold text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              Jembatan Merah Saat Senja
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="group">
+            <div class="overflow-hidden rounded-lg shadow-md">
+              <img
+                src="images/gambar4.jpg"
+                alt="Pantai 3"
+                class="h-60 w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
+              />
+            </div>
+            <div
+              class="mt-2 text-lg font-semibold text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              Bebatuan Yang Memecah Ombak
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="group">
+            <div class="overflow-hidden rounded-lg shadow-md">
+              <img
+                src="images/gambar5.jpg"
+                alt="Pantai 3"
+                class="h-60 w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
+              />
+            </div>
+            <div
+              class="mt-2 text-lg font-semibold text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              Pemandangan Matahari Terbenam
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="group">
+            <div class="overflow-hidden rounded-lg shadow-md">
+              <img
+                src="images/gambar6.jpg"
+                alt="Pantai 3"
+                class="h-60 w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
+              />
+            </div>
+            <div
+              class="mt-2 text-lg font-semibold text-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              Camping Ground
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aktivitas Menarik -->
+    <section id="aktivitas" class="py-20 px-4">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-blue-600 mb-2">Aktivitas Menarik</h2>
+        <p class="text-gray-600 mb-10">
+          Berbagai kegiatan seru yang bisa dilakukan di Pantai Menganti.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+          <!-- Card 1 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg hover:-translate-y-2 transform transition duration-300"
+          >
+            <div class="text-blue-600 text-4xl mb-4">
+              <i class="fas fa-umbrella-beach"></i>
+            </div>
+            <h3 class="font-bold text-lg mb-2">Bersantai di Pantai</h3>
+            <p class="text-gray-600">
+              Nikmati keindahan pasir putih dan suara deburan ombak sambil
+              berjemur atau sekadar duduk menikmati pemandangan.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg hover:-translate-y-2 transform transition duration-300"
+          >
+            <div class="text-blue-600 text-4xl mb-4">
+              <i class="fas fa-swimmer"></i>
+            </div>
+            <h3 class="font-bold text-lg mb-2">Aktivitas Air</h3>
+            <p class="text-gray-600">
+              Pantai Menganti cocok untuk berenang, bermain air, atau
+              berselancar. Namun tetap perhatikan kondisi ombak untuk keamanan.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg hover:-translate-y-2 transform transition duration-300"
+          >
+            <div class="text-blue-600 text-4xl mb-4">
+              <i class="fas fa-hiking"></i>
+            </div>
+            <h3 class="font-bold text-lg mb-2">Hiking & Fotografi</h3>
+            <p class="text-gray-600">
+              Jelajahi bukit dan tebing sekitar pantai untuk mendapatkan
+              pemandangan menakjubkan dan spot foto terbaik.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tips Berwisata -->
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+          <div class="bg-blue-600 text-white p-8 rounded-lg shadow-md">
+            <h3 class="text-2xl font-bold mb-4">Tips Berwisata</h3>
+            <ul class="list-disc list-inside space-y-2">
+              <li>
+                Bawa perlengkapan seperti topi, kacamata hitam, dan tabir surya.
+              </li>
+              <li>Perhatikan kondisi ombak dan air sebelum berenang.</li>
+              <li>Jaga kebersihan pantai, bawa pulang sampah Anda.</li>
+              <li>Hindari datang saat hujan lebat untuk menghindari bahaya.</li>
+            </ul>
+          </div>
+          <div>
+            <img
+              src="images/galeri2.jpg"
+              alt="Pantai Menganti"
+              class="rounded-lg shadow-md object-cover w-full h-80"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lokasi -->
+    <section id="lokasi" class="bg-gray-100 p-6">
+      <div class="text-center mb-10">
+        <img
+          src="images/location.svg"
+          class="mx-auto mb-4"
+          style="width: 48px; height: 48px; max-width: 100%"
+        />
+        <h1 class="text-3xl font-bold text-blue-600 mb-3">Lokasi & Akses</h1>
+        <h2>
+          Temukan cara menuju Pantai Menganti dan waktu terbaik untuk berkunjung
+        </h2>
+      </div>
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Kolom Kiri (Alamat, Jam Operasional, Waktu Terbaik) -->
+        <div class="space-y-6">
+          <!-- Alamat -->
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-xl font-bold mb-2">📍 Alamat</h2>
+            <p>
+              Desa Karangduwur, Kecamatan Ayah, Kabupaten Kebumen, Jawa Tengah
+            </p>
+            <ul class="list-disc list-inside text-sm mt-4">
+              <li>± 15 km dari Pantai Logending</li>
+              <li>± 30 km dari pusat Kota Gombong</li>
+              <li>± 65 km dari pusat Kota Kebumen</li>
+            </ul>
+          </div>
+
+          <!-- Jam Operasional -->
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-xl font-bold mb-2">⏰ Jam Operasional</h2>
+            <p>
+              Pantai Menganti buka setiap hari selama 24 jam, namun untuk
+              keamanan direkomendasikan berkunjung antara:
+            </p>
+            <p class="mt-2 font-semibold">06.00 - 18.00 WIB</p>
+          </div>
+
+          <!-- Waktu Terbaik untuk Berkunjung -->
+          <div class="mt-6 bg-gray-100">
+            <div class="bg-white p-6 rounded-lg shadow">
+              <h2 class="text-xl font-bold mb-4">
+                ✨ Waktu Terbaik untuk Berkunjung
+              </h2>
+              <div class="space-y-3 text-sm">
+                <div>
+                  <p class="font-semibold text-green-700">
+                    Musim Kemarau (Mei-September)
+                  </p>
+                  <p>
+                    Waktu terbaik untuk berkunjung dengan cuaca cerah dan laut
+                    tenang.
+                    <span class="bg-green-200 px-2 py-0.5 rounded"
+                      >Sangat Direkomendasikan</span
+                    >
+                  </p>
+                </div>
+                <div>
+                  <p class="font-semibold text-yellow-700">
+                    Musim Peralihan (April & Oktober)
+                  </p>
+                  <p>
+                    Cuaca bisa berubah-ubah, namun masih cukup baik untuk
+                    berkunjung.
+                  </p>
+                </div>
+                <div>
+                  <p class="font-semibold text-red-700">
+                    Musim Hujan (November-Maret)
+                  </p>
+                  <p>
+                    Hindari berkunjung saat hujan lebat karena risiko gelombang
+                    dan tanah longsor.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kolom Kanan (Peta Lokasi) -->
+        <div class="space-y-6">
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-xl font-bold mb-4">🧭 Lokasi Peta</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.6269949299647!2d109.39829317492936!3d-7.503478092505311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6520a31df5c971%3A0x8cfbe5e36f8e4f38!2sPantai%20Menganti!5e0!3m2!1sid!2sid!4v1714205840590!5m2!1sid!2sid"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="rounded mb-4"
+            >
+            </iframe>
+            <div class="text-sm">
+              <p>
+                Pantai Menganti dapat diakses dengan kendaraan pribadi melalui
+                jalan darat. Dari pusat Kota Kebumen, ikuti rute menuju ke arah
+                selatan melalui Kecamatan Ayah.
+              </p>
+              <div class="mt-4 p-3 bg-yellow-100 text-yellow-800 rounded">
+                <p>
+                  <strong>Tips:</strong> Jalan menuju pantai cukup menantang
+                  dengan beberapa tanjakan dan turunan. Disarankan menggunakan
+                  kendaraan dengan ground clearance tinggi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- END Lokasi -->
+    <!-- Kontak -->
+    <section id="kontak" class="py-12 px-4 bg-white">
+      <div class="container mx-auto max-w-4xl">
+        <div class="text-center mb-10">
+          <img
+            src="images/contact.svg"
+            alt="Kontak Kami"
+            class="mx-auto mb-4"
+            style="width: 48px; height: 48px; max-width: 100%"
+          />
+
+          <h1 class="text-3xl font-bold text-blue-600 mb-3">Kontak Kami</h1>
+          <p class="text-gray-600">
+            Hubungi kami untuk informasi lebih lanjut atau reservasi kunjungan
+            kelompok
+          </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-6">
+          <!-- Informasi Kontak -->
+          <div class="md:w-1/2 bg-gray-50 p-6 rounded-lg">
+            <h2 class="text-xl font-bold text-blue-600 mb-5 border-b pb-2">
+              Informasi Kontak
+            </h2>
+
+            <div class="space-y-4">
+              <div>
+                <h3 class="font-semibold text-gray-700">Alamat</h3>
+                <p class="text-gray-600 mt-1">
+                  Desa Karangduwur, Kecamatan Ayah,<br />
+                  Kabupaten Kebumen, Jawa Tengah
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-gray-700">Telepon</h3>
+                <p class="text-gray-600 mt-1">+62 812-3456-7890</p>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-gray-700">Email</h3>
+                <p class="text-gray-600 mt-1">info@pantaimenganti.com</p>
+              </div>
+
+              <!-- media belum ada -->
+            </div>
+          </div>
+
+          <!-- Form Kirim Pesan dengan Shadow Box -->
+          <div
+            class="md:w-1/2 bg-white p-6 rounded-lg border border-gray-200 shadow-lg"
+          >
+            <h2 class="text-xl font-bold text-blue-600 mb-5 border-b pb-2">
+              Kirim Pesan
+            </h2>
+
+            <form class="space-y-4">
+              <div>
+                <label class="block text-gray-700 mb-1">Nama</label>
+                <input
+                  type="text"
+                  placeholder="Nama Anda"
+                  class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+                />
+              </div>
+
+              <div>
+                <label class="block text-gray-700 mb-1">Email</label>
+                <input
+                  type="email"
+                  placeholder="email@contoh.com"
+                  class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+                />
+              </div>
+
+              <div>
+                <label class="block text-gray-700 mb-1">Subjek</label>
+                <input
+                  type="text"
+                  placeholder="Subjek pesan"
+                  class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"
+                />
+              </div>
+
+              <div>
+                <label class="block text-gray-700 mb-1">Pesan</label>
+                <textarea
+                  placeholder="Tulis pesan Anda di sini"
+                  class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500 h-32"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded font-medium transition"
+              >
+                Kirim Pesan
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-6 text-center shadow-inner">
+      <p class="text-gray-600">
+        &copy; 2025 Pantai Menganti. Semua Hak Dilindungi.
+      </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
