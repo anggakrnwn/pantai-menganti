@@ -6,7 +6,7 @@
     <title>Pantai Menganti</title>
     <link rel="icon" href="images/projectmenganti.png" type="image/png" />
     <link rel="stylesheet" href="src/output.css" />
-    <!-- optional kalau kamu nanti mau custom -->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
   </head>
   <body class="font-sans">
     <nav class="bg-transparent fixed w-full z-10 transition-all duration-300">
@@ -180,7 +180,7 @@
     </section>
 
     <!-- Section About -->
-    <section id="tentang" class="py-20 px-4 bg-white">
+    <section data-aos="fade-up" data-aos-duration="1200" id="tentang" class="py-20 px-4 bg-white">
       <img src="images/ancor.svg" alt="" class="h-20 block mx-auto" />
       <div class="container mx-auto text-center">
         <h2 class="text-4xl font-bold text-blue-600 mb-6">
@@ -198,7 +198,7 @@
         class="container mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-12"
       >
         <!-- Gambar -->
-        <div class="md:w-1/2 mb-8 md:mb-0">
+        <div data-aos="fade-right" data-aos-duration="1200" class="md:w-1/2 mb-8 md:mb-0">
           <img
             src="images/galeri2.jpg"
             alt="Pantai Menganti"
@@ -207,7 +207,7 @@
         </div>
 
         <!-- Teks -->
-        <div class="md:w-1/2 text-center md:text-left">
+        <div data-aos="fade-right" data-aos-duration="1200" class="md:w-1/2 text-center md:text-left">
           <h2 class="text-3xl font-bold mb-4">Pantai Menganti</h2>
           <p class="text-gray-700 mb-4">
             Pantai Menganti adalah salah satu pantai tersembunyi di pesisir
@@ -259,14 +259,16 @@
     <!-- Galeri -->
     <section id="galeri" class="py-20 px-4">
       <div class="container mx-auto text-center">
+        <div data-aos="fade-up" data-aos-duration="1200">
         <img src="images/camera.png" class="block mx-auto h-15 w-15" alt="" />
         <h2 class="text-3xl font-bold text-blue-600 mb-6">Galeri Keindahan</h2>
         <h2 class="mb-8 text-3xl">
           Jelajahi keindahan Pantai Menganti melalui foto-foto menakjubkan
         </h2>
+      </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <!-- Item 1 -->
-          <div class="group">
+          <div data-aos="zoom-in-right" data-aos-duration="1200" class="group">
             <!-- container overflow-hidden supaya zoomnya tidak meluber -->
             <div class="overflow-hidden rounded-lg shadow-md">
               <img
@@ -284,7 +286,7 @@
           </div>
 
           <!-- Item 2 -->
-          <div class="group">
+          <div data-aos="zoom-in-up" data-aos-duration="1200" class="group">
             <div class="overflow-hidden rounded-lg shadow-md">
               <img
                 src="images/gambar2.jpg"
@@ -300,7 +302,7 @@
           </div>
 
           <!-- Item 3 -->
-          <div class="group">
+          <div data-aos="zoom-in-left" data-aos-duration="1200" class="group">
             <div class="overflow-hidden rounded-lg shadow-md">
               <img
                 src="images/gambar3.jpg"
@@ -316,7 +318,7 @@
           </div>
 
           <!-- Item 4 -->
-          <div class="group">
+          <div data-aos="zoom-in-right" data-aos-duration="1200" class="group">
             <div class="overflow-hidden rounded-lg shadow-md">
               <img
                 src="images/gambar4.jpg"
@@ -332,7 +334,7 @@
           </div>
 
           <!-- Item 5 -->
-          <div class="group">
+          <div data-aos="zoom-in-up" data-aos-duration="1200" class="group">
             <div class="overflow-hidden rounded-lg shadow-md">
               <img
                 src="images/gambar5.jpg"
@@ -348,7 +350,7 @@
           </div>
 
           <!-- Item 6 -->
-          <div class="group">
+          <div data-aos="zoom-in-left" data-aos-duration="1200" class="group">
             <div class="overflow-hidden rounded-lg shadow-md">
               <img
                 src="images/gambar6.jpg"
@@ -369,6 +371,7 @@
     <!-- Aktivitas Menarik -->
     <section id="aktivitas" class="py-20 px-4">
       <div class="container mx-auto text-center">
+        <img src="images/umbrella.png" class="mx-auto h-15 w-15" alt="" srcset="">
         <h2 class="text-3xl font-bold text-blue-600 mb-2">Aktivitas Menarik</h2>
         <p class="text-gray-600 mb-10">
           Berbagai kegiatan seru yang bisa dilakukan di Pantai Menganti.
@@ -597,9 +600,9 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
-
+    
+                
+    </section>
 
     <!-- END Lokasi -->
     <!-- Kontak -->
@@ -712,7 +715,17 @@
         &copy; 2025 Pantai Menganti. Semua Hak Dilindungi.
       </p>
     </footer>
+<!-- Load AOS dari CDN -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-    <script src="js/script.js"></script>
+<!-- Inisialisasi AOS setelah DOM siap -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    AOS.init();
+  });
+</script>
+
+<!-- Script kamu sendiri -->
+<script src="js/script.js"></script>
   </body>
 </html>
