@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pantai Menganti</title>
     <link rel="icon" href="images/projectmenganti.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="stylesheet" href="src/output.css" />
     <!-- optional kalau kamu nanti mau custom -->
   </head>
@@ -663,10 +667,156 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white py-6 text-center shadow-inner">
-      <p class="text-gray-600">
-        &copy; 2025 Pantai Menganti. Semua Hak Dilindungi.
-      </p>
+    <footer class="bg-blue-600 text-white">
+      <div class="container mx-auto px-4 py-12 max-w-screen-lg">
+        <!-- Baris utama dengan 4 kolom -->
+        <div class="flex flex-col md:flex-row gap-8 mb-8">
+          <!-- Menggunakan flex-row untuk layout horizontal -->
+
+          <!-- Kolom 1: Menganti Beach -->
+          <div class="flex-1 pt-4">
+            <div class="flex items-center gap-2 mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-anchor"
+              >
+                <path d="M12 22V8"></path>
+                <path d="M5 12H2a10 10 0 0 0 20 0h-3"></path>
+                <circle cx="12" cy="5" r="3"></circle>
+              </svg>
+              <span class="font-bold text-xl"> Menganti Beach</span>
+            </div>
+            <p class="text-gray-300">
+              Keindahan tersembunyi di pesisir selatan Jawa Tengah, dengan pasir
+              putih, tebing karang, dan air laut biru kehijauan yang
+              menakjubkan.
+            </p>
+          </div>
+
+          <!-- Kolom 2: Navigasi -->
+          <div class="flex-1 pt-4">
+            <h3 class="text-lg font-bold mb-4">Navigasi</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#beranda"
+                  class="text-gray-300 hover:text-white transition-colors"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#tentang"
+                  class="text-gray-300 hover:text-white transition-colors"
+                  >Tentang</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#galeri"
+                  class="text-gray-300 hover:text-white transition-colors"
+                  >Galeri</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#aktivitas"
+                  class="text-gray-300 hover:text-white transition-colors"
+                  >Aktivitas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#lokasi"
+                  class="text-gray-300 hover:text-white transition-colors"
+                  >Lokasi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#kontak"
+                  class="text-gray-300 hover:text-white transition-colors"
+                  >Kontak</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kolom 3: Kontak -->
+          <div class="flex-1 pt-4">
+            <h3 class="text-lg font-bold mb-4">Kontak</h3>
+            <ul class="space-y-2">
+              <li class="text-gray-300">
+                Desa Karangduwur, Kecamatan Ayah, Kabupaten Kebumen, Jawa Tengah
+              </li>
+              <li class="text-gray-300">+62 812-3456-7890</li>
+              <li class="text-gray-300">info@pantaimenganti.com</li>
+            </ul>
+          </div>
+
+          <!-- Kolom 4: Ikuti Kami -->
+          <div class="flex-1 pt-4">
+            <h3 class="text-lg font-bold mb-4">Ikuti Kami</h3>
+            <div class="flex gap-6">
+              <!-- Jarak antara ikon diperbesar menjadi gap-6 -->
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="text-gray-300 hover:text-white transition-colors text-2xl"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="text-gray-300 hover:text-white transition-colors text-2xl"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                class="text-gray-300 hover:text-white transition-colors text-2xl"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Garis pemisah -->
+        <div class="border-t border-white/30 my-6"></div>
+
+        <!-- Bagian copyright -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-center pt-2"
+        >
+          <p class="text-gray-300 text-sm">
+            © 2025 Pantai Menganti. Hak Cipta Dilindungi.
+          </p>
+          <div class="flex gap-4 mt-4 md:mt-0">
+            <a
+              href="#"
+              class="text-gray-300 text-sm hover:text-white transition-colors"
+              >Kebijakan Privasi
+            </a>
+            <a
+              href="#"
+              class="text-gray-300 text-sm hover:text-white transition-colors"
+            >
+              Syarat & Ketentuan</a
+            >
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="js/script.js"></script>
