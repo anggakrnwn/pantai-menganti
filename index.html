@@ -10,7 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="stylesheet" href="src/output.css" />
-    <!-- optional kalau kamu nanti mau custom -->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
   </head>
   <body class="font-sans">
     <nav class="bg-transparent fixed w-full z-10 transition-all duration-300">
@@ -129,10 +129,9 @@
           url('images/hero.png');
       "
     >
-      <div class="px-4">
+      <div class="px-4" data-aos="zoom-in" data-aos-duration="1200">
         <h1
-          class="text-5xl md:text-7xl font-extrabold text-white mb-4 drop-shadow-lg"
-        >
+          class="text-5xl md:text-7xl font-extrabold text-white mb-4 drop-shadow-lg">
           Menganti Beach
         </h1>
         <h2 class="text-2xl md:text-3xl text-gray-300 mb-6 drop-shadow-md">
@@ -184,7 +183,7 @@
     </section>
 
     <!-- Section About -->
-    <section id="tentang" class="py-20 px-4 bg-white">
+    <section data-aos="fade-up" data-aos-duration="1200" id="tentang" class="py-20 px-4 bg-white">
       <img src="images/ancor.svg" alt="" class="h-20 block mx-auto" />
       <div class="container mx-auto text-center">
         <h2 class="text-4xl font-bold text-blue-600 mb-6">
@@ -202,7 +201,7 @@
         class="container mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-12"
       >
         <!-- Gambar -->
-        <div class="md:w-1/2 mb-8 md:mb-0">
+        <div data-aos="fade-right" data-aos-duration="1200" class="md:w-1/2 mb-8 md:mb-0">
           <img
             src="images/galeri2.jpg"
             alt="Pantai Menganti"
@@ -211,7 +210,7 @@
         </div>
 
         <!-- Teks -->
-        <div class="md:w-1/2 text-center md:text-left">
+        <div data-aos="fade-right" data-aos-duration="1200" class="md:w-1/2 text-center md:text-left">
           <h2 class="text-3xl font-bold mb-4">Pantai Menganti</h2>
           <p class="text-gray-700 mb-4">
             Pantai Menganti adalah salah satu pantai tersembunyi di pesisir
@@ -263,14 +262,16 @@
     <!-- Galeri -->
     <section id="galeri" class="py-20 px-4">
       <div class="container mx-auto text-center">
+        <div data-aos="fade-up" data-aos-duration="1200">
         <img src="images/camera.png" class="block mx-auto h-15 w-15" alt="" />
         <h2 class="text-3xl font-bold text-blue-600 mb-6">Galeri Keindahan</h2>
         <h2 class="mb-8 text-3xl">
           Jelajahi keindahan Pantai Menganti melalui foto-foto menakjubkan
         </h2>
+      </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <!-- Item 1 -->
-          <div class="group">
+          <div data-aos="zoom-in-right" data-aos-duration="1200" class="group">
             <!-- container overflow-hidden supaya zoomnya tidak meluber -->
             <div class="overflow-hidden rounded-lg shadow-md">
               <img
@@ -288,7 +289,7 @@
           </div>
 
           <!-- Item 2 -->
-          <div class="group">
+          <div data-aos="zoom-in-up" data-aos-duration="1200" class="group">
             <div class="overflow-hidden rounded-lg shadow-md">
               <img
                 src="images/gambar2.jpg"
@@ -304,7 +305,7 @@
           </div>
 
           <!-- Item 3 -->
-          <div class="group">
+          <div data-aos="zoom-in-left" data-aos-duration="1200" class="group">
             <div class="overflow-hidden rounded-lg shadow-md">
               <img
                 src="images/gambar3.jpg"
@@ -320,7 +321,7 @@
           </div>
 
           <!-- Item 4 -->
-          <div class="group">
+          <div data-aos="zoom-in-right" data-aos-duration="1200" class="group">
             <div class="overflow-hidden rounded-lg shadow-md">
               <img
                 src="images/gambar4.jpg"
@@ -336,7 +337,7 @@
           </div>
 
           <!-- Item 5 -->
-          <div class="group">
+          <div data-aos="zoom-in-up" data-aos-duration="1200" class="group">
             <div class="overflow-hidden rounded-lg shadow-md">
               <img
                 src="images/gambar5.jpg"
@@ -352,7 +353,7 @@
           </div>
 
           <!-- Item 6 -->
-          <div class="group">
+          <div data-aos="zoom-in-left" data-aos-duration="1200" class="group">
             <div class="overflow-hidden rounded-lg shadow-md">
               <img
                 src="images/gambar6.jpg"
@@ -372,15 +373,17 @@
 
     <!-- Aktivitas Menarik -->
     <section id="aktivitas" class="py-20 px-4">
-      <div class="container mx-auto text-center">
+      <div class="container mx-auto text-center" data-aos="fade-up" data-aos-duration="1200">
+        <img src="images/umbrella.png" class="mx-auto h-15 w-15" alt="" srcset="">
         <h2 class="text-3xl font-bold text-blue-600 mb-2">Aktivitas Menarik</h2>
         <p class="text-gray-600 mb-10">
           Berbagai kegiatan seru yang bisa dilakukan di Pantai Menganti.
         </p>
+      </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <div data-aos="fade-up" data-aos-duration="1200" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           <!-- Card 1 -->
-          <div
+          <div 
             class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg hover:-translate-y-2 transform transition duration-300"
           >
             <div class="text-blue-600 text-4xl mb-4">
@@ -424,7 +427,7 @@
 
         <!-- Tips Berwisata -->
         <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-          <div class="bg-blue-600 text-white p-8 rounded-lg shadow-md">
+          <div class="bg-blue-600 text-white p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-duration="1200">
             <h3 class="text-2xl font-bold mb-4">Tips Berwisata</h3>
             <ul class="list-disc list-inside space-y-2">
               <li>
@@ -435,7 +438,7 @@
               <li>Hindari datang saat hujan lebat untuk menghindari bahaya.</li>
             </ul>
           </div>
-          <div>
+          <div data-aos="fade-up" data-aos-duration="1200">
             <img
               src="images/galeri2.jpg"
               alt="Pantai Menganti"
@@ -448,8 +451,8 @@
 
     <!-- Lokasi -->
     <section id="lokasi" class="bg-gray-100 p-6">
-      <div class="text-center mb-10">
-        <img
+      <div data-aos="fade-up" data-aos-duration="1200" class="text-center mb-10">
+        <img 
           src="images/location.svg"
           class="mx-auto mb-4"
           style="width: 48px; height: 48px; max-width: 100%"
@@ -459,7 +462,7 @@
           Temukan cara menuju Pantai Menganti dan waktu terbaik untuk berkunjung
         </h2>
       </div>
-      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div data-aos="fade-up" data-aos-duration="1200" class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
         <!-- Kolom Kiri (Alamat, Jam Operasional, Waktu Terbaik) -->
         <div class="space-y-6">
           <!-- Alamat -->
@@ -559,9 +562,52 @@
           </div>
         </div>
       </div>
-    </section>
+      </section>
+<!-- END Lokasi -->
+ 
+<!-- Biaya Masuk dan Fasilitas -->
+<div class="max-w-4xl mx-auto bg-blue-600 text-white p-8 rounded-lg">
+  <div class="text-center mb-6">
+    <h2 class="text-2xl font-bold">Biaya Masuk dan Fasilitas</h2>
+    <p class="text-sm">Tiket masuk ke Pantai Menganti sangat terjangkau dengan fasilitas dasar yang tersedia.</p>
+  </div>
 
-    <!-- END Lokasi -->
+  <div class="flex flex-col md:flex-row justify-center gap-6 mb-8">
+    <!-- Tiket Masuk -->
+    <div class="p-6 rounded-lg text-center w-full md:w-64">
+      <h3 class="text-lg font-semibold mb-2">Tiket Masuk</h3>
+      <p class="text-3xl font-bold">Rp 10.000</p>
+      <p class="text-sm">per orang</p>
+      <p class="text-xs mt-2">*Harga dapat berubah sewaktu-waktu</p>
+    </div>
+
+    <!-- Parkir -->
+    <div class="p-6 rounded-lg text-center w-full md:w-64">
+      <h3 class="text-lg font-semibold mb-2">Parkir</h3>
+      <p class="mb-1">Motor: <span class="font-bold">Rp 5.000</span></p>
+      <p class="mb-1">Mobil: <span class="font-bold">Rp 10.000</span></p>
+      <p class="text-xs mt-2">*Harga dapat berubah sewaktu-waktu</p>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <h3 class="text-lg font-semibold mb-4">Fasilitas:</h3>
+    <div class="grid grid-cols-2 gap-4 max-w-md mx-auto text-sm">
+      <div class="space-y-2 text-left">
+        <p>✓ Toilet umum</p>
+        <p>✓ Warung makan</p>
+        <p>✓ Gazebo</p>
+      </div>
+      <div class="space-y-2 text-left">
+        <p>✓ Area parkir</p>
+        <p>✓ Mushola</p>
+        <p>✓ Penginapan</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     <!-- Kontak -->
     <section id="kontak" class="py-12 px-4 bg-white">
       <div class="container mx-auto max-w-4xl">
@@ -818,7 +864,17 @@
         </div>
       </div>
     </footer>
+<!-- Load AOS dari CDN -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-    <script src="js/script.js"></script>
+<!-- Inisialisasi AOS setelah DOM siap -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    AOS.init();
+  });
+</script>
+
+<!-- Script kamu sendiri -->
+<script src="js/script.js"></script>
   </body>
 </html>
