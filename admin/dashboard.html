@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard Admin</title>
+  </head>
+  <body>
+    <h2>Dashboard Admin</h2>
+    <p id="status">Memuat data...</p>
+    <button onclick="logout()">Logout</button>
+
+    <script>
+      // Cek token
+      const token = localStorage.getItem("token");
+      if (!token) {
+        alert("Kamu belum login.");
+        window.location.href = "login.html";
+      }
+
+      // Contoh request ke backend dengan token
+      fetch("http://localhost:5000/api/auth/status", {
+        headers: { Authorization: `Bearer ${token}` },
+      })
+        // ... sisa kode Anda
+        .then((res) => {
+          if (!res.ok) {
+            // Tangani respons non-OK (misal 401, 403)
+            if (res.status === 401 || res.status === 403) {
+              throw new Error("Token tidak valid atau expired");
+            }
+            throw new Error("Terjadi kesalahan saat mengambil status");
+          }
+          return res.json();
+        })
+        .then((data) => {
+          document.getElementById("status").innerText =
+            "Login sebagai: " + data.username;
+        })
+        .catch((err) => {
+          // Alert berdasarkan error yang dilempar atau error jaringan
+          alert(err.message || "Terjadi kesalahan jaringan atau server");
+          localStorage.removeItem("token");
+          window.location.href = "login.html";
+        });
+
+      function logout() {
+        localStorage.removeItem("token");
+        window.location.href = "login.html";
+      }
+    </script>
+  </body>
+</html>

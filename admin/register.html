@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Daftar Admin Baru</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f4f4f4;
+      }
+      .container {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      p {
+        text-align: center;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Daftar Admin Baru</h2>
+      <form id="registerForm">
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Masukkan Username"
+          required
+        /><br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Masukkan Password"
+          required
+        /><br />
+        <button type="submit">Daftar</button>
+      </form>
+      <p>Sudah punya akun? <a href="login.html">Login di sini</a></p>
+    </div>
+
+    <script>
+      document.getElementById("registerForm").onsubmit = async function (e) {
+        e.preventDefault();
+
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        const res = await fetch("http://localhost:5000/api/auth/register", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ username, password }),
+        });
+
+        const data = await res.json();
+
+        if (res.ok) {
+          alert(data.message + ". Silakan login.");
+          window.location.href = "login.html"; // Arahkan ke halaman login setelah registrasi berhasil
+        } else {
+          alert("Gagal mendaftar: " + data.message);
+        }
+      };
+    </script>
+  </body>
+</html>
