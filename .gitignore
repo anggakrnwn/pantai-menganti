@@ -1,2 +1,46 @@
-# VS Code
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Build
+dist/
+build/
+.next/
+out/
+
+# Dependency directories
+jspm_packages/
+
+# dotenv environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Editor folders
 .vscode/
+.idea/
+
+# Coverage
+coverage/
+
+# Others
+*.tgz
+.yarn-integrity
+.pnp.*
+.parcel-cache/
+.cache/
+.eslintcache
+turbo/
+
+# React Native
+.expo/
